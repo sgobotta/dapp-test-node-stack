@@ -1,1 +1,1 @@
-web: backend/npm start
+web: app/bin/node server.js
