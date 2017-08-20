@@ -1,1 +1,2 @@
-web: ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'
+script: find . -maxdepth 2 -mindepth 1 \! -type d
+web: find . -maxdepth 2 -mindepth 1 \! -type d
