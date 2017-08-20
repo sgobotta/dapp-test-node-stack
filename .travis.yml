@@ -7,22 +7,13 @@ cache:
   directories:
     - "node_modules"
 
-stages:
-- build
-- deploy
-
-before_script:
+install:
   - npm install -g @angular/cli
   - (cd backend && npm install)
   - (cd frontend && npm install)
+  - (cd frontend && ng build -prod --output-path=../backend/client)
 
-build-client:
-  stage: build
-  script:
-    - (cd frontend && ng build -prod --output-path=../backend/client)
-
-deploy-platform:
-  stage: deploy
+deploy:
   provider: heroku
   api_key:
     secure: 3613c17b-bebe-418f-b100-6336addfb4de
