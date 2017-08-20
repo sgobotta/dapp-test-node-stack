@@ -1,0 +1,4 @@
+{
+  "root": "backend/client",
+  "clean_urls": true
+}
