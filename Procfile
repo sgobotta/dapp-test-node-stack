@@ -1,1 +1,2 @@
-web: node backend/server.js
+release: npm build
+web: npm run

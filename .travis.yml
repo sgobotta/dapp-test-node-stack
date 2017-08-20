@@ -25,7 +25,6 @@ install:
 script: (cd frontend && ng test --single-run)
 
 deploy:
-  script: (cd frontend && ng build -prod --output-path=../backend/client)
   provider: heroku
   api_key:
     secure: 3613c17b-bebe-418f-b100-6336addfb4de

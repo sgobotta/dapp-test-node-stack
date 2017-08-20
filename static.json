@@ -1,5 +1,0 @@
-{
-  "routes": {
-    "backend/client/*.html": "index.html",
-  }
-}
