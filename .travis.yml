@@ -29,4 +29,5 @@ deploy:
   provider: heroku
   api_key:
     secure: 3613c17b-bebe-418f-b100-6336addfb4de
+  skip_cleanup: true
   app: group-f-morfi-ya-node
