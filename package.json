@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "cd frontend && ng build -prod --output-path=../backend/client",
-    "run": "cd backend && npm start"
+    "preinstall": "cd backend && npm install && cd .. && cd frontend && npm install",
+    "postinstall": "cd frontend && ng build -prod --output-path=../backend/client",
+    "start": "cd backend && npm start"
   }
 }
