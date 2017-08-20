@@ -1,6 +1,5 @@
-language: node_js
+language: node
 node_js:
-  - "iojs"
   - "6"
 
 cache:
