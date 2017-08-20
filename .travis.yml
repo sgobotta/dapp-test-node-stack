@@ -11,6 +11,9 @@ install:
   - (cd frontend && npm install)
   - (cd frontend && ng build -prod --output-path=../backend/client)
 
+test:
+  - (cd frontend && npm test)
+
 deploy:
   provider: heroku
   api_key:
