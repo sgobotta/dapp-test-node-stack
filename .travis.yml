@@ -1,0 +1,33 @@
+language: node_js
+node_js:
+  - "iojs"
+  - "6"
+
+cache:
+  directories:
+    - "node_modules"
+
+stages:
+- build
+- test
+- deploy
+
+before_script:
+  - npm install -g @angular/cli
+  - (cd backend && npm install)
+  - (cd frontend && npm install)
+
+build-client:
+  stage: build
+  script:
+    - (cd frontend && ng build -prod --output-path=../backend/client)
+
+test-platform:
+  stage: test
+
+deploy-platform:
+  stage: deploy
+  provider: heroku
+  api_key:
+    secure: 3613c17b-bebe-418f-b100-6336addfb4de
+  app: group-f-morfi-ya-node

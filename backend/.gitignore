@@ -3,3 +3,6 @@
 
 # compiled output
 /client
+
+# misc
+*.log
