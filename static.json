@@ -1,4 +1,5 @@
 {
-  "root": "backend",
-  "clean_urls": true
+  "routes": {
+    "backend/client/*.html": "index.html",
+  }
 }
