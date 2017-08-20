@@ -1,4 +1,4 @@
 {
-  "root": "backend/client",
+  "root": "backend",
   "clean_urls": true
 }
