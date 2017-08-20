@@ -21,7 +21,8 @@ install:
   - (cd backend && npm install)
   - (cd frontend && npm install)
   - (cd frontend && ng build -prod --output-path=../backend/client)
-  - (cd frontend && ng test --single-run)
+
+script: (cd frontend && ng test --single-run)
 
 deploy:
   provider: heroku
