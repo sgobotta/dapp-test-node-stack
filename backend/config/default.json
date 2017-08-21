@@ -1,0 +1,9 @@
+{
+  "COMMON": {
+      "mongoDbConfig": "sgobotta:aimbot@ds151153.mlab.com:51153/dapp-test-db",
+      "log" : {
+          "fileName" : "api-error-logs.log",
+          "logsDirectory" : "logs"
+        }
+    }
+}

@@ -2,7 +2,7 @@
   "name": "group-f-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "test"
   },
@@ -10,8 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "config": "^1.19.0",
+    "cors": "^2.7.1",
     "ejs": "^2.5.7",
     "express": "^4.15.4",
-    "mongojs": "^2.4.1"
+    "express-validator": "^2.19.1",
+    "express-winston": "^1.2.0",
+    "mongojs": "^2.4.1",
+    "winston": "^2.2.0"
   }
 }
